@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
+
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
