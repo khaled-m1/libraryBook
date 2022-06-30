@@ -4,8 +4,8 @@ import { ChakraProvider, Box, Grid } from '@chakra-ui/react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import '@fontsource/tajawal';
 import Home from './Page/Home';
-// import Navbar from './components/Home/Navbar';
-import Navbar2 from './components/Navbar2/Navbar2';
+import Navbar from './components/Home/Navbar';
+// import Navbar2 from './components/Navbar2/Navbar2';
 import theme from './Theme/theme';
 import About from './Page/About';
 import Team from './Page/Team';
@@ -64,8 +64,8 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-        {/* <Navbar /> */}
-        <Navbar2 />
+        <Navbar />
+        {/* <Navbar2 /> */}
         <Routes>
           <Route
             path="/"

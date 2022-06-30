@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
+import { Link } from "react-router-dom";
+
 import {
   Box,
   Flex,
   HStack,
-  Link,
+  
   IconButton,
   useDisclosure,
   useColorModeValue,
@@ -20,11 +22,11 @@ const NavLink = ({ children }) => (
     px={2}
     py={1}
     rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={children === 'Home' ? '/' : '/' + children}
+    // _hover={{
+    //   textDecoration: 'none',
+    //   bg: useColorModeValue('gray.200', 'gray.700'),
+    // }}
+    to={children === 'Home' ? '/' : '/' + children}
   >
     {children}
   </Link>
